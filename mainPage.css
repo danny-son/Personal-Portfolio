@@ -1,0 +1,173 @@
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #1f1f1f;
+    overflow-x: clip;
+}
+
+.nav-bar {
+    margin: 0 auto;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #161616;
+}
+
+.nav-home {
+    text-decoration: none;
+}
+
+#home-logo {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: wheat;
+    letter-spacing: 5px;
+}
+
+
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    letter-spacing: 2px;
+    transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.icon-link {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 5px; 
+    
+}
+
+i {
+    color: white;
+}
+
+ul, li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    transform: none;
+}
+
+.nav-items:hover, #github-img:hover, #linkedin-img:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(122, 122, 122);
+}
+
+#github-img, #linkedin-img {
+    color: rgb(180, 180, 180);
+    transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
+}
+
+.menu {
+    display: none;
+}
+
+.menu div{
+    position: relative;
+    left: 2em;
+    width: 25px;
+    height: 5px;
+    background-color: rgb(180, 180, 180);
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 1089px) {
+    .nav-list {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 5vh;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #161616;
+        transform: translateX(100%);
+        
+    }
+
+    .nav-list li{
+        opacity: 0;
+    }
+    .nav-links li{
+        opacity: 0;
+        display: flex;
+        padding: 0px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .menu {
+        cursor: pointer;
+        display: block;
+    }
+
+
+    body {
+       overflow-x: hidden;
+    }
+
+}
+
+
+@keyframes menuFadeIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes menuFadeOut {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+@keyframes navItemsFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes introBarFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+   
+   
+
+
