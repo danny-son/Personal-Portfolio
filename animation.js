@@ -21,6 +21,10 @@ function slide () {
                 item.style.animation = `navItemsFadeIn 0.5s ease forwards ${index / 7 + 0.3}s`;
             }
         });
+
+        //menu animates to X 
+        menu.classList.toggle('toggle');
+        
     });
 }
 
