@@ -10,8 +10,9 @@ body {
 
 header {
     position: fixed;
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0px; /* Position the navbar at the top of the page */
     width: 100%;
+    height: 3vh;
 }
 
 .nav-bar {
@@ -39,12 +40,6 @@ header {
 ::selection {
     background-color: black;
     color: white;
-}
-
-.main-headline {
-    padding: 5vh;
-    height: 2000px;
-    background-color: black;
 }
 
 .profile-picture {
@@ -107,6 +102,8 @@ ul, li {
     margin: 2px;
     transition: all 0.3s ease;
 }
+
+
 
 
 @media screen and (max-width: 1089px) {

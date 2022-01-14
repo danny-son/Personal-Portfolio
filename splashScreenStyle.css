@@ -1,0 +1,40 @@
+.introScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.name {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(207, 207, 207);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.letter {
+    position: relative;
+    display: inline-block;
+    bottom: -200px;
+    opacity: 0;
+}
+
+.letter.active {
+    bottom: 0px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+
+.letter.fade {
+    bottom: 300px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}

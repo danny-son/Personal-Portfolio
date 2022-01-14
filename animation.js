@@ -30,7 +30,7 @@ function slide () {
 
 function animateNavBar () {
     const nameLogo = document.querySelector('.nav-home');
-    nameLogo.style.animation = `introBarFadeIn 1.5s ease forwards`;    
+    nameLogo.style.animation = `introBarFadeIn 2.5s ease forwards 3s`;    
    
 }
 
