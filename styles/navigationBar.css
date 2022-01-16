@@ -1,18 +1,11 @@
-html {
-    font-family: 'Oswald', sans-serif;
-}
-
-body {
-    margin: 0;
-    background-color: #1f1f1f;
-    overflow-x: clip;
-}
+/* styling for our navigation bar (supporting both mobile and desktop) */
 
 header {
     position: fixed;
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%;
     height: 3vh;
+    z-index: 100;
 }
 
 .nav-bar {
@@ -31,26 +24,8 @@ header {
 #home-logo {
     font-size: 2em;
     text-transform: uppercase;
-    color: wheat;
+    color: rgb(241, 213, 155);
     letter-spacing: 5px;
-}
-
-
-
-::selection {
-    background-color: black;
-    color: white;
-}
-
-.profile-picture {
-    text-align: center;
-}
-
-#profile {
-    width: 10%;
-    height:auto;
-    border-style: solid;
-    border-width: 2px;
 }
 
 .nav-items {
@@ -103,9 +78,6 @@ ul, li {
     transition: all 0.3s ease;
 }
 
-
-
-
 @media screen and (max-width: 1089px) {
     .nav-list {
         position: absolute;
@@ -133,7 +105,6 @@ ul, li {
     }
 
     .menu {
-        transform: translateX(50px);
         float: right;
         cursor: pointer;
         display:flex;
@@ -141,15 +112,9 @@ ul, li {
         align-items: center;
 
     }
-
-
-    body {
-       overflow-x: hidden;
-    }
-
 }
 
-
+/* Keyframes to animate our menu bar as well as the content inside*/
 @keyframes menuFadeIn {
     from {
         transform: translateX(100%);
@@ -182,14 +147,15 @@ ul, li {
 
 @keyframes introBarFadeIn {
     from {
-        opacity: 0;
         transform: translateY(-50px);
     }
     to {
-        opacity: 1;
         transform: translateY(0px);
     }
 }
+
+
+/* simple shape maniuplation to form an X mark*/
 
 .toggle .line1 {
     transform: rotate(-45deg) translate(-6.5px, 6px);
@@ -202,6 +168,3 @@ ul, li {
 .toggle .line3 {
     transform: rotate(45deg) translate(-6.5px, -6px);
 }
-   
-
-

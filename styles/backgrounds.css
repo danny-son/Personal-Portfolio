@@ -1,0 +1,14 @@
+.about-me, .work-experience{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(bottom-waves-background.svg);
+}
+
+.divider {
+    height: 30vh;
+    background-size: cover;
+    background-image: url(top-waves-background.svg);
+}
+

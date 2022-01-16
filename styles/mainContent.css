@@ -1,0 +1,128 @@
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #1f1f1f;
+    overflow-x: clip;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 34px;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+section {
+     min-height: 800px;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+
+#resume {
+    color:  rgb(241, 213, 155);;
+    text-decoration: none;
+}
+
+
+
+/* Styling for the About Me Section*/
+.about-me, .work-experience{
+    margin-top: 20vh;
+    height: 100vh;
+}
+
+.about-me-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(25%,-30%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 75%;
+}
+
+#profile-pic {
+    width: 257px;
+    height: 222px;
+    border-radius: 50%;
+    border-color: #0c0c0c;
+    border-style: solid;
+}
+
+.about-me-text {
+    width: 60%;
+}
+
+/* Styling for the Work Experience Section */
+.work-experience {
+    margin-top: 0;
+}
+
+
+@media screen and (max-width: 1089px) {
+
+    h1 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+
+    .about-me {
+        margin-top: 30vh;
+        height: 100vh;
+    }
+
+    .about-me-box {
+        top: 50%;
+        left: 50%;
+        transform: translate(20%,-20%);
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    
+    #profile-pic {
+        width: 167px;
+        height: 132px;
+        border-radius: 50%;
+        border-color: #0c0c0c;
+        border-style: solid;
+    }
+    
+    .about-me-text {
+        width: 100%;
+    }
+
+    body {
+       overflow-x: hidden;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+
+    .about-me {
+        margin-top: 25vh;
+        height: 120vh;
+    }
+}
