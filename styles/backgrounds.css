@@ -1,6 +1,5 @@
-.about-me, .work-experience{
+.about-me, .skills, .projects {
     width: 100%;
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url(bottom-waves-background.svg);

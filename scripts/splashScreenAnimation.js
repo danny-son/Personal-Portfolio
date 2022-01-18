@@ -23,5 +23,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
         setTimeout(() => {
             introScreen.style.top = '-100vh'
         },2200);
+        
+        //re enables scrolling on the y axis to ensure the splash screen does not override scrolling on the main page;
+        setTimeout(() => {
+            console.log('scrolling should be enabled!');
+            document.body.style.overflowY = 'scroll';
+        }, 4000);
     })
 })

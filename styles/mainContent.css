@@ -6,11 +6,17 @@ body {
     margin: 0;
     background-color: #1f1f1f;
     overflow-x: clip;
+    overflow-y: hidden;
 }
 
 h1 {
     color: whitesmoke;
-    font-size: 34px;
+    font-size: 38px;
+}
+
+h3 {
+    color: whitesmoke;
+    font-size: 27px;
 }
 
 p {
@@ -36,9 +42,13 @@ section {
 
 
 /* Styling for the About Me Section*/
-.about-me, .work-experience{
+.about-me, .skills{
     margin-top: 20vh;
     height: 100vh;
+}
+
+.about-me {
+    opacity: 0;
 }
 
 .about-me-box {
@@ -60,12 +70,66 @@ section {
 }
 
 .about-me-text {
+    
     width: 60%;
 }
 
-/* Styling for the Work Experience Section */
-.work-experience {
+#skills-header, #projects-header {
+    text-align: center;
+}
+
+/* Styling for the Skills Section */
+.skills {
     margin-top: 0;
+    height: 160vh;
+}
+
+.skills-box {
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    padding-bottom: 10vh;
+    transform: translate(15%,0%);
+}
+
+.projects {
+    margin-top: 0;
+    height: 160vh;
+}
+
+.projects-box {
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(15%,0%);
+}
+
+.subheader {
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    color: rgb(241, 213, 155);
+    transform: translate(15%,100%);
+}
+
+.languages, .technologies{
+    width: 100%;
+}
+
+.language-element, .technology-element {
+    font-size: 24px;
+    height: 10vh;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.stop-scrolling {
+    overflow: hidden;
 }
 
 
@@ -77,6 +141,10 @@ section {
     
     p {
         font-size: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
 
@@ -106,6 +174,10 @@ section {
         width: 100%;
     }
 
+    .language-element, .technology-element {
+        font-size: 20px;
+    }
+
     body {
        overflow-x: hidden;
     }
@@ -116,6 +188,10 @@ section {
     h1 {
         font-size: 30px;
     }
+
+    h3 {
+        font-size: 20px;
+    }
     
     p {
         font-size: 15px;
@@ -124,5 +200,20 @@ section {
     .about-me {
         margin-top: 25vh;
         height: 120vh;
+    }
+
+    .language-element, .technology-element {
+        font-size: 16px;
+    }
+}
+
+@keyframes aboutMeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

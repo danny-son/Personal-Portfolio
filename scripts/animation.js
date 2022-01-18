@@ -34,6 +34,11 @@ function animateNavBar () {
    
 }
 
+function animateAboutMe () {
+    const aboutMe = document.querySelector('.about-me');
+    aboutMe.style.animation = 'aboutMeFadeIn 2s ease forwards 3250ms';
+}
+
 function observerWindowWidth() {
     var switchedToMobileScreen = false;
     window.addEventListener('resize', () => {
@@ -53,9 +58,9 @@ function observerWindowWidth() {
     });
 }
 
-
 function main() {
     animateNavBar();
+    animateAboutMe();
     slide();
     observerWindowWidth();
 } 
