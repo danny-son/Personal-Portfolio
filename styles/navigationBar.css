@@ -31,6 +31,7 @@ header {
 .nav-items {
     text-decoration: none;
     color: rgb(180, 180, 180);
+    font-size: 1em;
     letter-spacing: 2px;
     transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
     padding-left: 15px;
@@ -84,13 +85,12 @@ i {
         right: 0px;
         height: 92vh;
         top: 5vh;
+        opacity: 1;
         width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #161616;
-        transform: translateX(100%);
-        
     }
 
     #home-logo {

@@ -31,14 +31,14 @@
 
   <header>
     <nav class="nav-bar">
-      <a class="nav-home" href="personalSite.html">
+      <div class="nav-home">
         <span id="home-logo">Danny Son</span>
-      </a>
+      </div>
       <ul class="nav-list">
-        <li><a class="nav-items" href="about me">About Me</a></li>
-        <li><a class="nav-items" href="skills">Skills</a></li>
-        <li><a class="nav-items" href="project">Projects</a></li>
-        <li><a class="nav-items" href="contact">Contact</a></li>
+        <li><a class="nav-items" href="#about-me">About Me</a></li>
+        <li><a class="nav-items" href="#skills">Skills</a></li>
+        <li><a class="nav-items" href="#projects">Projects</a></li>
+        <li><a class="nav-items" href="#contact">Contact</a></li>
         <ul class="nav-links">
           <li>
             <a class="icon-link" href="https://www.linkedin.com/in/thisisdannyson">
@@ -61,7 +61,7 @@
   </header>
 
 
-  <div class="about-me">
+  <div class="about-me" id="about-me">
     <section class="about-me-box">
       <img src="images/WF_Pic.jpg" id="profile-pic" alt="">
       <div class="about-me-text">
@@ -86,7 +86,7 @@
   </div>
 
   <div class="divider"></div>
-  <div class="skills">
+  <div class="skills" id="skills">
     <h1 id='skills-header'><u>Skills:</u></h1>
     <h3 class='subheader'>Languages:</h3>
     <div class="skills-box">
@@ -133,12 +133,70 @@
   </div>
   <div class="divider-bottom"></div>
   <div class="divider"></div>
-  <div class="projects">
+  <div class="projects" id="projects">
     <h1 id='projects-header'><u>Projects:</u></h1>
+    <div class="projects-box">
+      <div class="comp-tic-tac-toe">
+        <h3 class='subheader'>Competitive Tic-Tac-Toe:</h3>
+        <div class="comp-tic-tac-toe-box">
+          <div class="comp-tic-tac-toe-video">
+            <video class="TTT-gameplay" width="200" height=400"  autoplay loop>
+              <source src="demos/comp_TTT_demo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="comp-tic-tac-toe-video"> 
+            <video class="TTT-intro" width="200" height="400" autoplay loop>
+              <source src="demos/comp_TTT_demo_2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>
+            This project was my first exposure to Android Development, and was what made me have a strong interest in Mobile Development.
+            This is an Android app made individually, written in Java and Kotlin, using Android Studio. <br><br>
+            I wanted to take a simple game and modify it such that there is more strategy and ways to win the game. 
+            This was done by creating a set of moves players can perform rather than just placing a piece, 
+            as well as incorporating a point system, so that players have to choose their moves wisely. <br><br>
+            At first this app was written very poorly and did not follow best practices for Android Development.
+            During my Co-op at Wellframe, I decided to refactor the whole app to follow a MVVM archetecture, as well as utilizing more of the Android Libraries.
+          </p>
+        </div>
+      </div>
+      <div class="website">
+        <h3 class='subheader'>This Website:</h3>
+        <div class="website-box">
+          <img src="images/website-logo.png" alt="" id="website-image">
+          <p>One of the things I enjoyed when working on my Android app as well as from my Co-op was making UI changes. <br><br>
+            With that in mind, I decided to create this website from scratch as a way for me to learn front end development, written in HTML, CSS and Javascript.
+            I decided to opt out of using some frameworks like Bootstrap so that I can learn raw CSS. This website includes some features like an animated splash screen,
+            a functional and styled navigation bar, and a functional to contact me. <br><br>
+            This website is also styled such that it can support users on mobile or desktop devices! </p>
 
+        </div>
+      </div>
+      <div class="ascension">
+        <h3 class='subheader'>Ascension:</h3>
+        <div class="ascension-box">
+          <img src="images/ascension.png" alt="" id="ascension-image">
+          <p>Ascension is a 3-D Platformer game, where the player is trying to recollect his memories as well as try and escape out of prison.
+             This was a group project from our Game Programming class at Northeastern University, created using Unity. All of the scripts that handles all the game logic is written in C#<br><br>
+            I was responsible for designing all the levels, implement player interaction with collectibles and objects, as well as handling some enemy AI for detecting the player<br><br>
+            Click <a href="https://www.youtube.com/watch?v=frafy3GehOA" id="game-trailer">here</a> to watch a demo of our game! </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="projects-footer"></div>
+  <div class="divider"></div>
+  <div class="contact" id="contact">
+    <h1 id='contact-header'><u>Contact Me:</u></h1>
+
+    
   </div>
   <script src="scripts/animation.js"></script>
   <script src="scripts/splashScreenAnimation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/smoothScroll.js"></script>
 </body>
 
 </html>

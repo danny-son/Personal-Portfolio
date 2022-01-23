@@ -1,8 +1,12 @@
-.about-me, .skills, .projects {
+.about-me, .skills, .projects-footer, .contact {
     width: 100%;
     background-position: center;
     background-size: cover;
     background-image: url(bottom-waves-background.svg);
+}
+
+.projects-footer {
+    height: 100vh;
 }
 
 .divider {

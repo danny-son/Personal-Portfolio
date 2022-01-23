@@ -1,14 +1,23 @@
 const nav = document.querySelector('.nav-list');
 const navList = document.querySelectorAll('.nav-list li');
+const menu = document.querySelector('.menu');
 var isMenuOpen = false;
+
+function setUpNavBar() {
+    if (window.innerWidth < 1090) {
+        nav.style.opacity = '0'
+    }
+}
+
 function slide () {
-    const menu = document.querySelector('.menu');
     const navList = document.querySelectorAll('.nav-list li');
     menu.addEventListener('click', () => {
         if (!isMenuOpen) {
+            nav.style.opacity = '1'
             nav.style.animation = `menuFadeIn 0.5s ease forwards`;
             isMenuOpen = true;
         } else {
+            nav.style.opacity = '1'
             nav.style.animation = `menuFadeOut 0.5s ease forwards`;
             isMenuOpen = false;
         }
@@ -40,7 +49,7 @@ function animateAboutMe () {
 }
 
 function observerWindowWidth() {
-    var switchedToMobileScreen = false;
+    var switchedToSmallerScreen = false;
     window.addEventListener('resize', () => {
         navList.forEach((item) => {
             item.style.animation = '';
@@ -48,17 +57,19 @@ function observerWindowWidth() {
        if (window.innerWidth < 1090) {
            isMenuOpen = false;
            nav.style.animation = `menuFadeOut 0s ease forwards`;
-           switchedToMobileScreen = true;
+           switchedToSmallerScreen = true;
        }
-       else if (window.innerWidth >= 1090 && switchedToMobileScreen) {
-            switchedToMobileScreen = false;
+       else if (window.innerWidth >= 1090 && switchedToSmallerScreen) {
+            switchedToSmallerScreen = false;
             isMenuOpen = false;
             nav.style.animation = `menuFadeIn 0s ease forwards`;
+            menu.classList.remove('toggle');
        }
     });
 }
 
 function main() {
+    setUpNavBar();
     animateNavBar();
     animateAboutMe();
     slide();

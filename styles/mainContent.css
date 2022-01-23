@@ -1,5 +1,6 @@
 html {
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,8 +35,12 @@ section {
 }
 
 
-#resume {
-    color:  rgb(241, 213, 155);;
+#resume, #game-trailer {
+    color:  rgb(241, 213, 155);
+    text-decoration: none;
+}
+
+#resume:visited, #game-trailer:visited {
     text-decoration: none;
 }
 
@@ -67,14 +72,14 @@ section {
     border-radius: 50%;
     border-color: #0c0c0c;
     border-style: solid;
+    border-width: 1px;
 }
 
 .about-me-text {
-    
     width: 60%;
 }
 
-#skills-header, #projects-header {
+#skills-header, #projects-header, #contact-header {
     text-align: center;
 }
 
@@ -89,18 +94,6 @@ section {
     left: 50%;
     width: 80%;
     padding-bottom: 10vh;
-    transform: translate(15%,0%);
-}
-
-.projects {
-    margin-top: 0;
-    height: 160vh;
-}
-
-.projects-box {
-    top: 50%;
-    left: 50%;
-    width: 75%;
     transform: translate(15%,0%);
 }
 
@@ -126,12 +119,65 @@ section {
     align-items: center;
 }
 
+.projects {
+    margin-top: 0;
+    height: 190vh;
+}
+
+.projects-box {
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 80vh;
+    transform: translate(15%,0%);
+}
+
 
 
 .stop-scrolling {
     overflow: hidden;
 }
 
+.comp-tic-tac-toe, .website, .ascension {
+    height: 75vh;
+    margin-bottom: 10vh;
+}
+
+.comp-tic-tac-toe-box {
+    display: flex;
+    margin-top: 10vh;
+}
+
+.comp-tic-tac-toe-video {
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.website-box {
+    display: flex;
+}
+
+
+#website-image {
+    width: 400px;
+}
+
+.ascension-box {
+    margin-top: 10vh;
+    display: flex;
+}
+
+#ascension-image {
+    padding-right: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+
+.contact {
+    margin-top: 0;
+    height: 70vh;
+}
 
 @media screen and (max-width: 1089px) {
 
@@ -146,7 +192,6 @@ section {
     h3 {
         font-size: 24px;
     }
-
 
     .about-me {
         margin-top: 30vh;
@@ -182,6 +227,42 @@ section {
        overflow-x: hidden;
     }
 
+    .projects {
+        margin-top: 0;
+        height: 220vh;
+    }
+
+
+    .comp-tic-tac-toe {
+        height: 95vh;
+    }
+
+    .comp-tic-tac-toe-video {
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+
+    .comp-tic-tac-toe-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .TTT-gameplay, .TTT-intro {
+        width: 150px;
+        height: 250px;
+    }
+
+    .website {
+        height: 70vh;
+    }
+
+    #website-image,  #ascension-image {
+        width: 250px;
+        height: 250px;
+
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -204,6 +285,37 @@ section {
 
     .language-element, .technology-element {
         font-size: 16px;
+    }
+
+    .projects {
+        height: 220vh;
+    }
+
+    .comp-tic-tac-toe-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .TTT-gameplay, .TTT-intro {
+        width: 100px;
+        height: 200px;
+    }
+
+
+    .website-box, .ascension-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #website-image, #ascension-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    #ascension-image {
+        padding:0px;
     }
 }
 
