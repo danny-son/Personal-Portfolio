@@ -35,7 +35,7 @@ section {
 }
 
 
-#resume, #game-trailer {
+#resume, #game-trailer, #input-header {
     color:  rgb(241, 213, 155);
     text-decoration: none;
 }
@@ -153,6 +153,7 @@ section {
     display: inline-block;
 }
 
+
 .website-box {
     display: flex;
 }
@@ -176,8 +177,54 @@ section {
 
 .contact {
     margin-top: 0;
-    height: 70vh;
+    height: 100vh;
 }
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#form-name, #form-email, #form-message {
+    border-radius: 15px;
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    width: 80%;
+}
+
+#form-submit {
+    border-radius: 20px;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    color: black;
+    background: rgb(241, 213, 155);
+    width: 175px;
+    cursor: pointer;
+}
+
+.contact-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    padding: 2vw, 4vw;
+}
+
+
+
 
 @media screen and (max-width: 1089px) {
 
@@ -263,6 +310,17 @@ section {
 
     }
 
+    #form-name, #form-email, #form-message {
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    #form-submit {
+        font-size: 16px;
+        padding: 14px;
+        width: 150px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -317,6 +375,18 @@ section {
     #ascension-image {
         padding:0px;
     }
+
+    #form-name, #form-email, #form-message {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    #form-submit {
+        font-size: 14px;
+        padding: 8px;
+        width: 125px;
+    }
+
 }
 
 @keyframes aboutMeFadeIn {

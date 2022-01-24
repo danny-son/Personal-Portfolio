@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/splashScreenStyle.css">
   <link rel="stylesheet" href="styles/navigationBar.css">
   <link rel="stylesheet" href="styles/backgrounds.css">
+  <link rel="stylesheet" href="styles//snackbar.css">
   <script src="https://kit.fontawesome.com/91e667ef0f.js" crossorigin="anonymous"></script>
 
   <title>Danny Son</title>
@@ -140,12 +141,12 @@
         <h3 class='subheader'>Competitive Tic-Tac-Toe:</h3>
         <div class="comp-tic-tac-toe-box">
           <div class="comp-tic-tac-toe-video">
-            <video class="TTT-gameplay" width="200" height=400"  autoplay loop>
+            <video autoplay="true" loop="true" class="TTT-gameplay" width="200" height=400" >
               <source src="demos/comp_TTT_demo.mp4" type="video/mp4">
             </video>
           </div>
           <div class="comp-tic-tac-toe-video"> 
-            <video class="TTT-intro" width="200" height="400" autoplay loop>
+            <video autoplay="true" loop="true" class="TTT-intro" width="200" height="400" >
               <source src="demos/comp_TTT_demo_2.mp4" type="video/mp4">
             </video>
           </div>
@@ -166,9 +167,9 @@
           <img src="images/website-logo.png" alt="" id="website-image">
           <p>One of the things I enjoyed when working on my Android app as well as from my Co-op was making UI changes. <br><br>
             With that in mind, I decided to create this website from scratch as a way for me to learn front end development, written in HTML, CSS and Javascript.
-            I decided to opt out of using some frameworks like Bootstrap so that I can learn raw CSS. This website includes some features like an animated splash screen,
-            a functional and styled navigation bar, and a functional to contact me. <br><br>
-            This website is also styled such that it can support users on mobile or desktop devices! </p>
+            I decided to opt out of using some frameworks like Bootstrap so that I can learn raw CSS. Some of the features I included are an animated splash screen,
+            a functional and animated navigation bar, and a form to contact me, sent straight to my email! <br><br>
+            This website is also styled such that it can support users on mobile or desktop devices. </p>
 
         </div>
       </div>
@@ -190,13 +191,25 @@
   <div class="divider"></div>
   <div class="contact" id="contact">
     <h1 id='contact-header'><u>Contact Me:</u></h1>
-
-    
+    <div class="contact-box">
+      <form class="contact-form">
+        <h3 id="input-header">Feel free to send me a message, and I will try to get back to you ASAP!</h3>
+        <input type="text" name="name" id="form-name" placeholder="Enter your Name" required>
+        <input type="email" name="email" id="form-email" placeholder="Enter your Email" required>
+        <textarea id="form-message" name="message" rows="8" placeholder="Send a Message" required></textarea>
+        <button id="form-submit" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <div id="snackbar">
+    <p id="snackbar-message">Form Submitted!</p>
   </div>
   <script src="scripts/animation.js"></script>
   <script src="scripts/splashScreenAnimation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="scripts/smoothScroll.js"></script>
+  <script src="scripts/email.js" ></script>
 </body>
 
 </html>
