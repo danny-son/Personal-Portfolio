@@ -1,401 +1,91 @@
 html {
-    font-family: 'Oswald', sans-serif;
-    scroll-behavior: smooth;
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    background-color: #1f1f1f;
-    overflow-x: clip;
-    overflow-y: hidden;
+  margin: 0;
+  background-color: #1f1f1f;
+  overflow-x: clip;
+  overflow-y: hidden;
 }
 
 h1 {
-    color: whitesmoke;
-    font-size: 38px;
+  color: whitesmoke;
+  font-size: 38px;
 }
 
 h3 {
-    color: whitesmoke;
-    font-size: 27px;
+  color: whitesmoke;
+  font-size: 27px;
 }
 
 p {
-    color: whitesmoke;
-    font-size: 20px;
+  color: whitesmoke;
+  font-size: 20px;
 }
 
 section {
-     min-height: 800px;
+  min-height: 800px;
 }
 
 ::selection {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
-
-
-#resume, #game-trailer, #input-header {
-    color:  rgb(241, 213, 155);
-    text-decoration: none;
-}
-
-#resume:visited, #game-trailer:visited {
-    text-decoration: none;
-}
-
-
-
-/* Styling for the About Me Section*/
-.about-me, .skills{
-    margin-top: 20vh;
-    height: 100vh;
-}
-
-.about-me {
-    opacity: 0;
-}
-
-.about-me-box {
-    top: 50%;
-    left: 50%;
-    transform: translate(25%,-30%);
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    width: 75%;
-}
-
-#profile-pic {
-    width: 257px;
-    height: 222px;
-    border-radius: 50%;
-    border-color: #0c0c0c;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.about-me-text {
-    width: 60%;
-}
-
-#skills-header, #projects-header, #contact-header {
-    text-align: center;
-}
-
-/* Styling for the Skills Section */
-.skills {
-    margin-top: 0;
-    height: 160vh;
-}
-
-.skills-box {
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    padding-bottom: 10vh;
-    transform: translate(15%,0%);
-}
-
-.subheader {
-    top: 50%;
-    left: 50%;
-    width: 75%;
-    color: rgb(241, 213, 155);
-    transform: translate(15%,100%);
-}
-
-.languages, .technologies{
-    width: 100%;
-}
-
-.language-element, .technology-element {
-    font-size: 24px;
-    height: 10vh;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.projects {
-    margin-top: 0;
-    height: 190vh;
-}
-
-.projects-box {
-    top: 50%;
-    left: 50%;
-    width: 75%;
-    height: 80vh;
-    transform: translate(15%,0%);
-}
-
-
 
 .stop-scrolling {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.comp-tic-tac-toe, .website, .ascension {
-    height: 75vh;
-    margin-bottom: 10vh;
+#resume,
+#game-trailer,
+#input-header,
+#sungha-jung {
+  color: rgb(241, 213, 155);
+  text-decoration: none;
 }
 
-.comp-tic-tac-toe-box {
-    display: flex;
-    margin-top: 10vh;
+#resume:visited,
+#game-trailer:visited,
+#sungha-jung:visited {
+  text-decoration: none;
 }
 
-.comp-tic-tac-toe-video {
-    padding-right: 20px;
-    display: inline-block;
+#skills-header,
+#projects-header,
+#contact-header {
+  text-align: center;
 }
-
-
-.website-box {
-    display: flex;
-}
-
-
-#website-image {
-    width: 400px;
-}
-
-.ascension-box {
-    margin-top: 10vh;
-    display: flex;
-}
-
-#ascension-image {
-    padding-right: 30px;
-    width: 400px;
-    height: 400px;
-}
-
-
-.contact {
-    margin-top: 0;
-    height: 100vh;
-}
-
-.contact-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#form-name, #form-email, #form-message {
-    border-radius: 15px;
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: #f5f5f5;
-    font-size: 16px;
-    width: 80%;
-}
-
-#form-submit {
-    border-radius: 20px;
-    border: 0;
-    outline: none;
-    padding: 15px;
-    font-weight: 800;
-    font-size: 20px;
-    color: black;
-    background: rgb(241, 213, 155);
-    width: 175px;
-    cursor: pointer;
-}
-
-.contact-form{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 600px;
-    align-items: center;
-    padding: 2vw, 4vw;
-}
-
-
-
 
 @media screen and (max-width: 1089px) {
+  h1 {
+    font-size: 30px;
+  }
 
-    h1 {
-        font-size: 30px;
-    }
-    
-    p {
-        font-size: 20px;
-    }
+  p {
+    font-size: 20px;
+  }
 
-    h3 {
-        font-size: 24px;
-    }
+  h3 {
+    font-size: 24px;
+  }
 
-    .about-me {
-        margin-top: 30vh;
-        height: 100vh;
-    }
-
-    .about-me-box {
-        top: 50%;
-        left: 50%;
-        transform: translate(20%,-20%);
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
-    }
-    
-    #profile-pic {
-        width: 167px;
-        height: 132px;
-        border-radius: 50%;
-        border-color: #0c0c0c;
-        border-style: solid;
-    }
-    
-    .about-me-text {
-        width: 100%;
-    }
-
-    .language-element, .technology-element {
-        font-size: 20px;
-    }
-
-    body {
-       overflow-x: hidden;
-    }
-
-    .projects {
-        margin-top: 0;
-        height: 220vh;
-    }
-
-
-    .comp-tic-tac-toe {
-        height: 95vh;
-    }
-
-    .comp-tic-tac-toe-video {
-        padding-right: 10px;
-        padding-bottom: 20px;
-    }
-
-    .comp-tic-tac-toe-box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .TTT-gameplay, .TTT-intro {
-        width: 150px;
-        height: 250px;
-    }
-
-    .website {
-        height: 70vh;
-    }
-
-    #website-image,  #ascension-image {
-        width: 250px;
-        height: 250px;
-
-    }
-
-    #form-name, #form-email, #form-message {
-        font-size: 16px;
-        padding: 15px;
-    }
-    
-    #form-submit {
-        font-size: 16px;
-        padding: 14px;
-        width: 150px;
-    }
-
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    h3 {
-        font-size: 20px;
-    }
-    
-    p {
-        font-size: 15px;
-    }
+  h3 {
+    font-size: 20px;
+  }
 
-    .about-me {
-        margin-top: 25vh;
-        height: 120vh;
-    }
-
-    .language-element, .technology-element {
-        font-size: 16px;
-    }
-
-    .projects {
-        height: 220vh;
-    }
-
-    .comp-tic-tac-toe-box {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .TTT-gameplay, .TTT-intro {
-        width: 100px;
-        height: 200px;
-    }
-
-
-    .website-box, .ascension-box {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #website-image, #ascension-image {
-        width: 120px;
-        height: 120px;
-    }
-
-    #ascension-image {
-        padding:0px;
-    }
-
-    #form-name, #form-email, #form-message {
-        font-size: 14px;
-        padding: 10px;
-    }
-    
-    #form-submit {
-        font-size: 14px;
-        padding: 8px;
-        width: 125px;
-    }
-
-}
-
-@keyframes aboutMeFadeIn {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  p {
+    font-size: 15px;
+  }
 }

@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="styles/mainContent.css" />
   <link rel="stylesheet" href="styles/splashScreenStyle.css">
   <link rel="stylesheet" href="styles/navigationBar.css">
+  <link rel="stylesheet" href="styles/aboutMe.css">
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/contact.css">
   <link rel="stylesheet" href="styles/backgrounds.css">
   <link rel="stylesheet" href="styles//snackbar.css">
   <script src="https://kit.fontawesome.com/91e667ef0f.js" crossorigin="anonymous"></script>
@@ -75,11 +79,12 @@
         </p>
         <p> I am currently seeking a Software Engineer Internship for Fall 2022 (September - December).</p>
         <p>
-          Feel Free to check out <a href="docs/danny-son-resume-Spring2022.pdf" id="resume">my resume!</a>
+          Feel Free to check out <a href="docs/resumeFall2022.pdf" id="resume">my resume!</a>
         </p>
         <p>
           Outside of programming, I love playing the guitar (even though I have no knowledge of how music theory works),
-          with Sungha Jung being my main inspiration for playing fingerstyle! I also enjoy working out, binging shows,
+          with <a href="https://www.youtube.com/watch?v=G_wC6-pIIpo" id="sungha-jung">Sungha Jung</a> being my main
+          inspiration for playing fingerstyle! I also enjoy working out, binging shows,
           and late night bike rides / skateboarding.
         </p>
       </div>
@@ -93,19 +98,37 @@
     <div class="skills-box">
       <table class="languages">
         <tr>
-          <td><p class="language-element">Java</p></td>
-          <td><p class="language-element">Kotlin</p></td>
-          <td><p class="language-element">C++</p></td>
+          <td>
+            <p class="language-element">Java</p>
+          </td>
+          <td>
+            <p class="language-element">Kotlin</p>
+          </td>
+          <td>
+            <p class="language-element">C++</p>
+          </td>
         </tr>
         <tr>
-          <td><p class="language-element">C#</p></td>
-          <td><p class="language-element">Python</p></td>
-          <td><p class="language-element">HTML</p></td>
+          <td>
+            <p class="language-element">C#</p>
+          </td>
+          <td>
+            <p class="language-element">Python</p>
+          </td>
+          <td>
+            <p class="language-element">HTML</p>
+          </td>
         </tr>
         <tr>
-          <td><p class="language-element">CSS</p></td>
-          <td><p class="language-element">JavaScript</p></td>
-          <td><p class="language-element">C</p></td>
+          <td>
+            <p class="language-element">CSS</p>
+          </td>
+          <td>
+            <p class="language-element">JavaScript</p>
+          </td>
+          <td>
+            <p class="language-element">C</p>
+          </td>
         </tr>
       </table>
     </div>
@@ -113,19 +136,37 @@
     <div class="skills-box-v2">
       <table class="technologies">
         <tr>
-          <td><p class="technology-element">Android Studio</p></td>
-          <td><p class="technology-element">IntelliJ</p></td>
-          <td><p class="technology-element">Visual Studio Code</p></td>
+          <td>
+            <p class="technology-element">Android Studio</p>
+          </td>
+          <td>
+            <p class="technology-element">IntelliJ</p>
+          </td>
+          <td>
+            <p class="technology-element">Visual Studio Code</p>
+          </td>
         </tr>
         <tr>
-          <td><p class="technology-element">Microsoft Visual Studio</p></td>
-          <td><p class="technology-element">Unity</p></td>
-          <td><p class="technology-element">XCode</p></td>
+          <td>
+            <p class="technology-element">Microsoft Visual Studio</p>
+          </td>
+          <td>
+            <p class="technology-element">Unity</p>
+          </td>
+          <td>
+            <p class="technology-element">XCode</p>
+          </td>
         </tr>
         <tr>
-          <td><p class="technology-element">Git / Github</p></td>
-          <td><p class="technology-element">Unix Terminal</p></td>
-          <td><p class="technology-element">PyCharm</p></td>
+          <td>
+            <p class="technology-element">Git / Github</p>
+          </td>
+          <td>
+            <p class="technology-element">Unix Terminal</p>
+          </td>
+          <td>
+            <p class="technology-element">PyCharm</p>
+          </td>
         </tr>
       </table>
     </div>
@@ -141,23 +182,25 @@
         <h3 class='subheader'>Competitive Tic-Tac-Toe:</h3>
         <div class="comp-tic-tac-toe-box">
           <div class="comp-tic-tac-toe-video">
-            <video autoplay="true" loop="true" class="TTT-gameplay" width="200" height=400" >
+            <video autoplay="true" muted loop="true" class="TTT-gameplay" width="200" height=400">
               <source src="demos/comp_TTT_demo.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="comp-tic-tac-toe-video"> 
-            <video autoplay="true" loop="true" class="TTT-intro" width="200" height="400" >
+          <div class="comp-tic-tac-toe-video">
+            <video autoplay="true" muted loop="true" class="TTT-intro" width="200" height="400">
               <source src="demos/comp_TTT_demo_2.mp4" type="video/mp4">
             </video>
           </div>
           <p>
-            This project was my first exposure to Android Development, and was what made me have a strong interest in Mobile Development.
+            This project was my first exposure to Android Development, and was what made me have a strong interest in
+            Mobile Development.
             This is an Android app made individually, written in Java and Kotlin, using Android Studio. <br><br>
-            I wanted to take a simple game and modify it such that there is more strategy and ways to win the game. 
-            This was done by creating a set of moves players can perform rather than just placing a piece, 
+            I wanted to take a simple game and modify it such that there is more strategy and ways to win the game.
+            This was done by creating a set of moves players can perform rather than just placing a piece,
             as well as incorporating a point system, so that players have to choose their moves wisely. <br><br>
             At first this app was written very poorly and did not follow best practices for Android Development.
-            During my Co-op at Wellframe, I decided to refactor the whole app to follow a MVVM archetecture, as well as utilizing more of the Android Libraries.
+            During my Co-op at Wellframe, I decided to refactor the whole app to follow a MVVM archetecture, as well as
+            utilizing more of the Android Libraries.
           </p>
         </div>
       </div>
@@ -165,9 +208,12 @@
         <h3 class='subheader'>This Website:</h3>
         <div class="website-box">
           <img src="images/website-logo.png" alt="" id="website-image">
-          <p>One of the things I enjoyed when working on my Android app as well as from my Co-op was making UI changes. <br><br>
-            With that in mind, I decided to create this website from scratch as a way for me to learn front end development, written in HTML, CSS and Javascript.
-            I decided to opt out of using some frameworks like Bootstrap so that I can learn raw CSS. Some of the features I included are an animated splash screen,
+          <p>One of the things I enjoyed when working on my Android app as well as from my Co-op was making UI changes.
+            <br><br>
+            With that in mind, I decided to create this website from scratch as a way for me to learn front end
+            development, written in HTML, CSS and Javascript.
+            I decided to opt out of using some frameworks like Bootstrap so that I can learn raw CSS. Some of the
+            features I included are an animated splash screen,
             a functional and animated navigation bar, and a form to contact me, sent straight to my email! <br><br>
             This website is also styled such that it can support users on mobile or desktop devices. </p>
 
@@ -177,10 +223,14 @@
         <h3 class='subheader'>Ascension:</h3>
         <div class="ascension-box">
           <img src="images/ascension.png" alt="" id="ascension-image">
-          <p>Ascension is a 3-D Platformer game, where the player is trying to recollect his memories as well as try and escape out of prison.
-             This was a group project from our Game Programming class at Northeastern University, created using Unity. All of the scripts that handles all the game logic is written in C#<br><br>
-            I was responsible for designing all the levels, implement player interaction with collectibles and objects, as well as handling some enemy AI for detecting the player<br><br>
-            Click <a href="https://www.youtube.com/watch?v=frafy3GehOA" id="game-trailer">here</a> to watch a demo of our game! </p>
+          <p>Ascension is a 3-D Platformer game, where the player is trying to recollect his memories as well as try and
+            escape out of prison.
+            This was a group project from our Game Programming class at Northeastern University, created using Unity.
+            All of the scripts that handles all the game logic is written in C#<br><br>
+            I was responsible for designing all the levels, implement player interaction with collectibles and objects,
+            as well as handling some enemy AI for detecting the player<br><br>
+            Click <a href="https://www.youtube.com/watch?v=frafy3GehOA" id="game-trailer">here</a> to watch a demo of
+            our game! </p>
         </div>
       </div>
 
@@ -209,7 +259,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="scripts/smoothScroll.js"></script>
-  <script src="scripts/email.js" ></script>
+  <script src="scripts/email.js"></script>
 </body>
 
 </html>

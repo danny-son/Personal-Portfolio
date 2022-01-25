@@ -1,0 +1,127 @@
+/* styling for our projects section */
+.projects {
+  margin-top: 0;
+  height: 190vh;
+}
+
+.projects-box {
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 80vh;
+  transform: translate(15%, 0%);
+}
+
+.comp-tic-tac-toe,
+.website,
+.ascension {
+  height: 75vh;
+  margin-bottom: 10vh;
+}
+
+.comp-tic-tac-toe-box {
+  display: flex;
+  margin-top: 10vh;
+}
+
+.comp-tic-tac-toe-video {
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.website-box {
+  display: flex;
+}
+
+#website-image {
+  width: 400px;
+}
+
+.ascension-box {
+  margin-top: 10vh;
+  display: flex;
+}
+
+#ascension-image {
+  padding-right: 30px;
+  width: 788px;
+  height: 386px;
+}
+
+@media screen and (max-width: 1089px) {
+  .projects {
+    margin-top: 0;
+    height: 220vh;
+  }
+
+  .comp-tic-tac-toe {
+    height: 95vh;
+  }
+
+  .comp-tic-tac-toe-video {
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .comp-tic-tac-toe-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .TTT-gameplay,
+  .TTT-intro {
+    width: 150px;
+    height: 250px;
+  }
+
+  .website {
+    height: 70vh;
+  }
+
+  #ascension-image {
+    width: 638px;
+    height: 236px;
+  }
+
+  #website-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    height: 220vh;
+  }
+
+  .comp-tic-tac-toe-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .TTT-gameplay,
+  .TTT-intro {
+    width: 100px;
+    height: 200px;
+  }
+
+  .website-box,
+  .ascension-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #website-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  #ascension-image {
+    width: 238px;
+    height: 136px;
+    padding: 0px;
+  }
+}

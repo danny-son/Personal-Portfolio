@@ -1,181 +1,181 @@
 /* styling for our navigation bar (supporting both mobile and desktop) */
 
 header {
-    position: fixed;
-    top: 0px; /* Position the navbar at the top of the page */
-    width: 100%;
-    height: 3vh;
-    z-index: 100;
+  position: fixed;
+  top: 0px; /* Position the navbar at the top of the page */
+  width: 100%;
+  height: 3vh;
+  z-index: 100;
 }
 
 .nav-bar {
-    margin: 0 auto;
-    min-height: 8vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #161616;
+  margin: 0 auto;
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #161616;
 }
 
 .nav-home {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #home-logo {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: rgb(241, 213, 155);
-    letter-spacing: 5px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: rgb(241, 213, 155);
+  letter-spacing: 5px;
 }
 
 .nav-items {
-    text-decoration: none;
-    color: rgb(180, 180, 180);
-    font-size: 1em;
-    letter-spacing: 2px;
-    transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
-    padding-left: 15px;
-    padding-right: 15px;
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .icon-link {
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 5px; 
-    
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 i {
-    color: white;
+  color: white;
 }
 
-.nav-bar ul, .nav-list li {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.2em;
-    transform: none;
+.nav-bar ul,
+.nav-list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2em;
+  transform: none;
 }
 
-.nav-items:hover, #github-img:hover, #linkedin-img:hover {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(122, 122, 122);
+.nav-items:hover,
+#github-img:hover,
+#linkedin-img:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 15px rgb(122, 122, 122);
 }
 
-#github-img, #linkedin-img {
-    color: rgb(180, 180, 180);
-    transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
+#github-img,
+#linkedin-img {
+  color: rgb(180, 180, 180);
+  transition: color 200ms ease-in-out, text-shadow 100ms ease-in;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
-.menu div{
-    width: 25px;
-    height: 5px;
-    background-color: rgb(180, 180, 180);
-    margin: 2px;
-    transition: all 0.3s ease;
+.menu div {
+  width: 25px;
+  height: 5px;
+  background-color: rgb(180, 180, 180);
+  margin: 2px;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1089px) {
-    .nav-list {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 5vh;
-        opacity: 1;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #161616;
-    }
+  .nav-list {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 5vh;
+    opacity: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+  }
 
-    #home-logo {
-        font-size: 1.75em;
-    }
+  #home-logo {
+    font-size: 1.75em;
+  }
 
-    .nav-list li{
-        opacity: 0;
-    }
-    
-    .nav-links li{
-        opacity: 0;
-        display: flex;
-        padding: 0px;
-        justify-content: start;
-        align-items: center;
-    }
+  .nav-list li {
+    opacity: 0;
+  }
 
-    .menu {
-        float: right;
-        cursor: pointer;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .nav-links li {
+    opacity: 0;
+    display: flex;
+    padding: 0px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .menu {
+    float: right;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #home-logo {
-        font-size: 1.5em;
-    }
-    
+  #home-logo {
+    font-size: 1.5em;
+  }
 }
 
 /* Keyframes to animate our menu bar as well as the content inside*/
 @keyframes menuFadeIn {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0%);
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes menuFadeOut {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(100%);
-    }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
-
 @keyframes navItemsFadeIn {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 @keyframes introBarFadeIn {
-    from {
-        transform: translateY(-50px);
-    }
-    to {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
-
 
 /* simple shape maniuplation to form an X mark*/
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-6.5px, 6px);
+  transform: rotate(-45deg) translate(-6.5px, 6px);
 }
 
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-6.5px, -6px);
+  transform: rotate(45deg) translate(-6.5px, -6px);
 }

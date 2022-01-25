@@ -1,17 +1,19 @@
-.about-me, .skills, .projects-footer, .contact {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: url(bottom-waves-background.svg);
+.about-me,
+.skills,
+.projects-footer,
+.contact {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(bottom-waves-background.svg);
 }
 
 .projects-footer {
-    height: 100vh;
+  height: 100vh;
 }
 
 .divider {
-    height: 30vh;
-    background-size: cover;
-    background-image: url(top-waves-background.svg);
+  height: 30vh;
+  background-size: cover;
+  background-image: url(top-waves-background.svg);
 }
-
