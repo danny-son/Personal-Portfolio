@@ -1,7 +1,7 @@
 /* styling for our projects section */
 .projects {
   margin-top: 0;
-  height: 190vh;
+  height: 280vh;
 }
 
 .projects-box {
@@ -12,6 +12,7 @@
   transform: translate(15%, 0%);
 }
 
+.play-together-go,
 .comp-tic-tac-toe,
 .website,
 .ascension {
@@ -19,11 +20,13 @@
   margin-bottom: 10vh;
 }
 
+.play-together-go-box
 .comp-tic-tac-toe-box {
   display: flex;
   margin-top: 10vh;
 }
 
+.play-together-go-video,
 .comp-tic-tac-toe-video {
   padding-right: 20px;
   display: inline-block;
@@ -51,24 +54,29 @@
 @media screen and (max-width: 1089px) {
   .projects {
     margin-top: 0;
-    height: 220vh;
+    height: 280vh;
   }
 
+  .play-together-go,
   .comp-tic-tac-toe {
     height: 95vh;
   }
 
+  .play-together-go-video,
   .comp-tic-tac-toe-video {
     padding-right: 10px;
     padding-bottom: 20px;
   }
 
+  .play-together-go-box,
   .comp-tic-tac-toe-box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
+  .PTG-intro,
+  .PTG-gameplay,
   .TTT-gameplay,
   .TTT-intro {
     width: 150px;
@@ -92,7 +100,7 @@
 
 @media screen and (max-width: 768px) {
   .projects {
-    height: 220vh;
+    height: 280vh;
   }
 
   .comp-tic-tac-toe-box {
@@ -102,6 +110,8 @@
     flex-wrap: wrap;
   }
 
+  .PTG-gameplay,
+  .PTG-intro,
   .TTT-gameplay,
   .TTT-intro {
     width: 100px;
