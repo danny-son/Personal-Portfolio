@@ -12,11 +12,15 @@
   transform: translate(15%, 0%);
 }
 
-.play-together-go,
+.play-together-go {
+  height: 85vh;
+  margin-bottom: 10vh;
+}
+
 .comp-tic-tac-toe,
 .website,
 .ascension {
-  height: 75vh;
+  height: 80vh;
   margin-bottom: 10vh;
 }
 
@@ -103,6 +107,7 @@
     height: 280vh;
   }
 
+  .play-together-go-box,
   .comp-tic-tac-toe-box {
     display: flex;
     justify-content: center;
